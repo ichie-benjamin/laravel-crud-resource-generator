@@ -20,6 +20,8 @@ return [
      */
     'template' => 'default',
 
+    'web_route' => 'admin',
+
     /*
     |--------------------------------------------------------------------------
     | The default path where the templates are located.
