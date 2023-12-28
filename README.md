@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An intelligent code generator for Laravel framework that will save you time! This awesome tool will help you generate resources like views, controllers, routes, migrations, languages and/or form-requests! It is extremely flexible and customizable to cover many on the use cases. It is shipped with cross-browsers compatible template, along with a client-side validation to modernize your application.
+An intelligent code generator for Laravel framework that will save you time!! This awesome tool will help you generate resources like views, controllers, routes, migrations, languages and/or form-requests! It is extremely flexible and customizable to cover many on the use cases. It is shipped with cross-browsers compatible template, along with a client-side validation to modernize your application.
 
 For full documentation and live demo please visit <a href="https://crestapps.com/laravel-code-generator/docs/2.3" target="_blank" title="Laravel Code Generator Documentation">crestapps.com</a>
 
