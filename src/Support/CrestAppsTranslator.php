@@ -1,6 +1,6 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
 use Illuminate\Translation\Translator;
 use Illuminate\Support\Arr;
@@ -26,7 +26,7 @@ class CrestAppsTranslator extends Translator
     /**
     * Adds a new instance of crestapps_translator to the IoC container,
     *
-    * @return CrestApps\CodeGenerator\Support\CrestAppsTranslator
+    * @return IchieBenjamin\CodeGenerator\Support\CrestAppsTranslator
     */
     public static function getTranslator()
     {

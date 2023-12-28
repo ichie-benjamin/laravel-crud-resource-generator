@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase;
+use IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase;
 
 class ApiScaffoldInput extends ScaffoldInputBase
 {
@@ -51,7 +51,7 @@ class ApiScaffoldInput extends ScaffoldInputBase
     /**
      * Creates a new class instance.
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $model
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $model
      *
      * @return void
      */

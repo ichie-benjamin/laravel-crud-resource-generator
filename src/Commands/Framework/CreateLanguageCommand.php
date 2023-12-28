@@ -1,15 +1,15 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Models\Label;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\CrestAppsTranslator;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\ViewLabelsGenerator;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Models\Label;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\CrestAppsTranslator;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\ViewLabelsGenerator;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
 use Exception;
 use Illuminate\Console\Command;
 
@@ -68,7 +68,7 @@ class CreateLanguageCommand extends Command
     /**
      * Gets the destenation file.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $modelName
      *
      * @return array
@@ -142,7 +142,7 @@ class CreateLanguageCommand extends Command
     /**
      * Gets a singleton instance of a translator based ont he current framework's version.
      *
-     * @return CrestApps\CodeGenerator\Support\CrestAppsTranslator | Illuminate\Translation\Translator
+     * @return IchieBenjamin\CodeGenerator\Support\CrestAppsTranslator | Illuminate\Translation\Translator
      */
     protected function getTranslator()
     {
@@ -289,7 +289,7 @@ class CreateLanguageCommand extends Command
     /**
      * Get file ready message.
      *
-     * @param CrestApps\CodeGenerator\Models\Label
+     * @param IchieBenjamin\CodeGenerator\Models\Label
      *
      * @return string
      */

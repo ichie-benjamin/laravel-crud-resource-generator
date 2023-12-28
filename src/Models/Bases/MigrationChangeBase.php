@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models\Bases;
+namespace IchieBenjamin\CodeGenerator\Models\Bases;
 
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
 
 class MigrationChangeBase
 {

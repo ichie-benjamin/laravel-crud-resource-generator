@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
 use Config as LaravelConfig;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 use Exception;
 use Illuminate\Config\Repository;
 

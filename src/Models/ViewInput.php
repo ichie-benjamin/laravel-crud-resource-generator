@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
 
 class ViewInput
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Models\FieldMigrationChange;
-use CrestApps\CodeGenerator\Models\IndexMigrationChange;
-use CrestApps\CodeGenerator\Models\MigrationCapsule;
-use CrestApps\CodeGenerator\Models\MigrationChangeCapsule;
-use CrestApps\CodeGenerator\Models\MigrationInput;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
-use CrestApps\CodeGenerator\Support\MigrationHistoryTracker;
+use IchieBenjamin\CodeGenerator\Models\FieldMigrationChange;
+use IchieBenjamin\CodeGenerator\Models\IndexMigrationChange;
+use IchieBenjamin\CodeGenerator\Models\MigrationCapsule;
+use IchieBenjamin\CodeGenerator\Models\MigrationChangeCapsule;
+use IchieBenjamin\CodeGenerator\Models\MigrationInput;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Support\MigrationHistoryTracker;
 use File;
 
 class MigrationTrackerCapsule implements JsonWriter
@@ -95,11 +95,11 @@ class MigrationTrackerCapsule implements JsonWriter
      * Get the difference between a givin resource and the
      * resource in the current migration
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resourceA
-     * @param CrestApps\CodeGenerator\Models\Resource $resourceB
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resourceA
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resourceB
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      *
-     * @return CrestApps\CodeGenerator\Models\MigrationChangeCapsule
+     * @return IchieBenjamin\CodeGenerator\Models\MigrationChangeCapsule
      */
     public function getDelta(Resource $resourceA, Resource $resourceB, MigrationInput $input)
     {
@@ -225,7 +225,7 @@ class MigrationTrackerCapsule implements JsonWriter
     /**
      * Update the last migration
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationCapsule $migration
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationCapsule $migration
      *
      * @return void
      */
@@ -314,7 +314,7 @@ class MigrationTrackerCapsule implements JsonWriter
     /**
      * Gets the last migration in the collection which is the one we are using
      *
-     * @return mix (null || CrestApps\CodeGenerator\Models\MigrationCapsule)
+     * @return mix (null || IchieBenjamin\CodeGenerator\Models\MigrationCapsule)
      */
     public function getCurrentMigration()
     {
@@ -337,7 +337,7 @@ class MigrationTrackerCapsule implements JsonWriter
      * Gets the last before current migration in the
      * collection which is the one we are using
      *
-     * @return mix (null || CrestApps\CodeGenerator\Models\MigrationCapsule)
+     * @return mix (null || IchieBenjamin\CodeGenerator\Models\MigrationCapsule)
      */
     public function getMigrationBeforeCurrent()
     {
@@ -445,7 +445,7 @@ class MigrationTrackerCapsule implements JsonWriter
      * @param string $resourceFile
      * @param array $migrationProperties
      *
-     * @return CrestApps\CodeGenerator\Models\MigrationTrackerCapsule
+     * @return IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule
      */
     public static function get($tableName, $modelName, $resourceFile, array $migrationProperties = [])
     {

@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Traits;
+namespace IchieBenjamin\CodeGenerator\Traits;
 
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 
 trait ApiDocViewsTrait
 {

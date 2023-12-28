@@ -1,12 +1,12 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Contracts\ChangeDetector;
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
-use CrestApps\CodeGenerator\Traits\Migration;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Contracts\ChangeDetector;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Traits\Migration;
 use Exception;
 
 class MigrationCapsule implements JsonWriter, ChangeDetector
@@ -73,7 +73,7 @@ class MigrationCapsule implements JsonWriter, ChangeDetector
     /**
      * The resources associated with the migration
      *
-     * @var CrestApps\CodeGenerator\Models\Resource
+     * @var IchieBenjamin\CodeGenerator\Models\Resource
      */
     public $resource;
 
@@ -187,7 +187,7 @@ class MigrationCapsule implements JsonWriter, ChangeDetector
      *
      * @param string $name
      *
-     * @return CrestApps\CodeGenerator\Models\MigrationCapsule
+     * @return IchieBenjamin\CodeGenerator\Models\MigrationCapsule
      */
     public static function get($name)
     {

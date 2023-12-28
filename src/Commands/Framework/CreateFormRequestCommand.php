@@ -1,12 +1,12 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Commands\Bases\ControllerRequestCommandBase;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ControllerRequestCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
 
 class CreateFormRequestCommand extends ControllerRequestCommandBase
 {
@@ -70,7 +70,7 @@ class CreateFormRequestCommand extends ControllerRequestCommandBase
     /**
      * Build the model class with the given name.
      *
-     * @param  CrestApps\CodeGenerator\Models\Resource $resource
+     * @param  IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $destenationFile
      *
      * @return bool

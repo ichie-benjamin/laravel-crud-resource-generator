@@ -1,17 +1,17 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Models\Bases\MigrationChangeBase;
-use CrestApps\CodeGenerator\Support\Contracts\ChangeDetector;
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Models\Bases\MigrationChangeBase;
+use IchieBenjamin\CodeGenerator\Support\Contracts\ChangeDetector;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
 
 class IndexMigrationChange extends MigrationChangeBase implements JsonWriter, ChangeDetector
 {
     /**
      * The field to be deleted or added
      *
-     * @var CrestApps\CodeGenerator\Models\Index
+     * @var IchieBenjamin\CodeGenerator\Models\Index
      */
     public $index;
 
@@ -43,9 +43,9 @@ class IndexMigrationChange extends MigrationChangeBase implements JsonWriter, Ch
     /**
      * Get new migration change from the given index
      *
-     * @param CrestApps\CodeGenerator\Models\Index $index
+     * @param IchieBenjamin\CodeGenerator\Models\Index $index
      *
-     * @return CrestApps\CodeGenerator\Models\IndexMigrationChange
+     * @return IchieBenjamin\CodeGenerator\Models\IndexMigrationChange
      */
     public static function getAdded(Index $index)
     {
@@ -59,9 +59,9 @@ class IndexMigrationChange extends MigrationChangeBase implements JsonWriter, Ch
     /**
      * Get new migration change from the given index
      *
-     * @param CrestApps\CodeGenerator\Models\Index $index
+     * @param IchieBenjamin\CodeGenerator\Models\Index $index
      *
-     * @return CrestApps\CodeGenerator\Models\IndexMigrationChange
+     * @return IchieBenjamin\CodeGenerator\Models\IndexMigrationChange
      */
     public static function getDeleted(Index $index)
     {
@@ -75,10 +75,10 @@ class IndexMigrationChange extends MigrationChangeBase implements JsonWriter, Ch
     /**
      * Get the migration change after comparing two given fields
      *
-     * @param CrestApps\CodeGenerator\Models\Field $fieldA
-     * @param CrestApps\CodeGenerator\Models\Field $fieldB
+     * @param IchieBenjamin\CodeGenerator\Models\Field $fieldA
+     * @param IchieBenjamin\CodeGenerator\Models\Field $fieldB
      *
-     * @return CrestApps\CodeGenerator\Models\FieldMigrationChange
+     * @return IchieBenjamin\CodeGenerator\Models\FieldMigrationChange
      */
     public static function compare(Field $fieldA, Field $fieldB)
     {

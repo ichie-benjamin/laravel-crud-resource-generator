@@ -1,12 +1,12 @@
 <?php
 
-namespace CrestApps\CodeGenerator\HtmlGenerators;
+namespace IchieBenjamin\CodeGenerator\HtmlGenerators;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\Label;
-use CrestApps\CodeGenerator\Support\ValidationParser;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\GeneratorReplacers;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\Label;
+use IchieBenjamin\CodeGenerator\Support\ValidationParser;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\GeneratorReplacers;
 use Exception;
 
 abstract class HtmlGeneratorBase
@@ -37,7 +37,7 @@ abstract class HtmlGeneratorBase
     /**
      * The view Label generator.
      *
-     * @var CrestApps\CodeGenerator\Support\ViewLabelsGenerator
+     * @var IchieBenjamin\CodeGenerator\Support\ViewLabelsGenerator
      */
     protected $viewLabels;
 
@@ -179,7 +179,7 @@ abstract class HtmlGeneratorBase
     /**
      * Replaces field's common templates
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -280,7 +280,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets a value accessor for the field.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @param string $view
      *
      * @return string
@@ -314,8 +314,8 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates an textarea html field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
-     * @param CrestApps\CodeGeneraotor\Support\ValidationParser $parser
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\ValidationParser $parser
      *
      * @return string
      */
@@ -377,8 +377,8 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates an checkbox/radio button html field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
-     * @param CrestApps\CodeGeneraotor\Support\ValidationParser $parser
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\ValidationParser $parser
      *
      * @return string
      */
@@ -407,9 +407,9 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates a checkbox or radio button html field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
-     * @param CrestApps\CodeGeneraotor\Support\Label $option
-     * @param CrestApps\CodeGeneraotor\Support\ValidationParser $parser
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Label $option
+     * @param IchieBenjamin\CodeGeneraotor\Support\ValidationParser $parser
      *
      * @return string
      */
@@ -446,8 +446,8 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates an select menu html field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
-     * @param CrestApps\CodeGeneraotor\Support\ValidationParser $parser
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\ValidationParser $parser
      *
      * @return string
      */
@@ -477,7 +477,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets the fields accessor
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -495,7 +495,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets the fields item accessor
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -512,7 +512,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets the field value accesor.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -539,7 +539,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets the selected value for a menu.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return string
      */
@@ -557,7 +557,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates an password html5 field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -577,7 +577,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets a rangeselector element for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -599,7 +599,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets a selectmonth element for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -619,8 +619,8 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates an password html5 field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
-     * @param CrestApps\CodeGeneraotor\Support\ValidationParser $parser
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\ValidationParser $parser
      *
      * @return string
      */
@@ -649,8 +649,8 @@ abstract class HtmlGeneratorBase
     /**
      * Gets creates an standard html5 field for a given field.
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
-     * @param CrestApps\CodeGeneraotor\Support\ValidationParser $parser
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\ValidationParser $parser
      *
      * @return string
      */
@@ -709,7 +709,7 @@ abstract class HtmlGeneratorBase
      * Wraps a field with a wrapper template
      *
      * @param string $fieldStub
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      * @param bool $standardLabel
      *
      * @return $this
@@ -733,7 +733,7 @@ abstract class HtmlGeneratorBase
     /**
      * Creates html label from a given field
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return string
      */
@@ -750,7 +750,7 @@ abstract class HtmlGeneratorBase
      * Creates html label.
      *
      * @param string $name
-     * @param CrestApps\CodeGenerator\Models\Label $label
+     * @param IchieBenjamin\CodeGenerator\Models\Label $label
      *
      * @return string
      */
@@ -767,7 +767,7 @@ abstract class HtmlGeneratorBase
     /**
      * Creates helper block
      *
-     * @param CrestApps\CodeGeneraotor\Support\Field $field
+     * @param IchieBenjamin\CodeGeneraotor\Support\Field $field
      *
      * @return string
      */
@@ -813,7 +813,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets title in trans() method.
      *
-     * @param CrestApps\CodeGenerator\Models\Label $label
+     * @param IchieBenjamin\CodeGenerator\Models\Label $label
      * @param bool $raw
      *
      * @return string
@@ -828,7 +828,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets title to display from a given label.
      *
-     * @param CrestApps\CodeGenerator\Models\Label $label
+     * @param IchieBenjamin\CodeGenerator\Models\Label $label
      * @param bool $raw
      *
      * @return $this
@@ -1086,7 +1086,7 @@ abstract class HtmlGeneratorBase
      * Replace the CssClass fo the given stub.
      *
      * @param string $stub
-     * @param CrestApps\CodeGenerator\Models\Label $label
+     * @param IchieBenjamin\CodeGenerator\Models\Label $label
      * @param string $class
      *
      * @return $this
@@ -1102,7 +1102,7 @@ abstract class HtmlGeneratorBase
      * Replace the fieldTitle fo the given stub.
      *
      * @param string $stub
-     * @param CrestApps\CodeGenerator\Models\Label $label
+     * @param IchieBenjamin\CodeGenerator\Models\Label $label
      * @param string $fieldTitle
      *
      * @return $this
@@ -1207,7 +1207,7 @@ abstract class HtmlGeneratorBase
     /**
      * It gets converts an array to a stringbase array for the views.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return string
      */
@@ -1261,7 +1261,7 @@ abstract class HtmlGeneratorBase
     /**
      * Get the placeholder attribute.
      *
-     * @param CrestApps\CodeGenerator\Models\Label $placeholder
+     * @param IchieBenjamin\CodeGenerator\Models\Label $placeholder
      *
      * @return string
      */
@@ -1270,7 +1270,7 @@ abstract class HtmlGeneratorBase
     /**
      * Get the placeholder attribute for a menu.
      *
-     * @param CrestApps\CodeGenerator\Models\Label $placeholder
+     * @param IchieBenjamin\CodeGenerator\Models\Label $placeholder
      * @param string $name
      *
      * @return string
@@ -1289,7 +1289,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets a plain title from a given label.
      *
-     * @param CrestApps\CodeGenerator\Models\Label $label
+     * @param IchieBenjamin\CodeGenerator\Models\Label $label
      * @param bool $raw
      *
      * @return string
@@ -1362,7 +1362,7 @@ abstract class HtmlGeneratorBase
     /**
      * Gets an instance of ViewLabelsGenerator
      *
-     * @return CrestApps\CodeGenerator\Support\ViewLabelsGenerator
+     * @return IchieBenjamin\CodeGenerator\Support\ViewLabelsGenerator
      */
     abstract protected function getViewLabelsGenerator();
 }

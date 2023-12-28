@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Traits;
+namespace IchieBenjamin\CodeGenerator\Traits;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
 use Exception;
 use File;
 
@@ -429,7 +429,7 @@ trait CommonCommand
      *
      * @param array $fields
      *
-     * @return CrestApps\CodeGenerator\Models\Field
+     * @return IchieBenjamin\CodeGenerator\Models\Field
      */
     protected function getPrimaryField(array $fields)
     {
@@ -446,7 +446,7 @@ trait CommonCommand
      * Determine the field to be used for header from the givin fields.
      *
      * @param array $fields
-     * @return CrestApps\CodeGenerator\Models\Field || null
+     * @return IchieBenjamin\CodeGenerator\Models\Field || null
      */
     protected function getHeaderField(array $fields)
     {

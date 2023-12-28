@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
-use CrestApps\CodeGenerator\Models\MigrationCapsule;
-use CrestApps\CodeGenerator\Models\MigrationTrackerCapsule;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\Migration;
+use IchieBenjamin\CodeGenerator\Models\MigrationCapsule;
+use IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\Migration;
 use File;
 
 class MigrationHistoryTracker
@@ -67,7 +67,7 @@ class MigrationHistoryTracker
     /**
      * Gets a migration capsule from the file if any
      *
-     * @return mix (null || CrestApps\CodeGenerator\Models\MigrationTrackerCapsule)
+     * @return mix (null || IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule)
      */
     public function get($tableName)
     {
@@ -123,8 +123,8 @@ class MigrationHistoryTracker
     /**
      * Adds properties to the migration tracker
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationTrackerCapsule
-     * @param CrestApps\CodeGenerator\Models\MigrationCapsule $migration
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationCapsule $migration
      *
      * @return array
      */

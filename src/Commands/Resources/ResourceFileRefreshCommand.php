@@ -1,13 +1,13 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Resources;
+namespace IchieBenjamin\CodeGenerator\Commands\Resources;
 
-use CrestApps\CodeGenerator\Commands\Bases\ResourceFileCommandBase;
-use CrestApps\CodeGenerator\Models\ForeignRelationship;
-use CrestApps\CodeGenerator\Models\Index;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ResourceFileCommandBase;
+use IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
+use IchieBenjamin\CodeGenerator\Models\Index;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
 
 class ResourceFileRefreshCommand extends ResourceFileCommandBase
 {

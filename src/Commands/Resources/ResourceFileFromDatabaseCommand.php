@@ -1,20 +1,20 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Resources;
+namespace IchieBenjamin\CodeGenerator\Commands\Resources;
 
-use CrestApps\CodeGenerator\Commands\Bases\ResourceFileCommandBase;
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\MigrationCapsule;
-use CrestApps\CodeGenerator\Models\MigrationTrackerCapsule;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\MigrationHistoryTracker;
-use CrestApps\CodeGenerator\Support\ResourceMapper;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
-use CrestApps\CodeGenerator\Traits\Migration;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ResourceFileCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\MigrationCapsule;
+use IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\MigrationHistoryTracker;
+use IchieBenjamin\CodeGenerator\Support\ResourceMapper;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Traits\Migration;
 use DB;
 use Exception;
 use File;
@@ -100,7 +100,7 @@ class ResourceFileFromDatabaseCommand extends ResourceFileCommandBase
     /**
      * Creates a virtual migration in the migration tracker
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $destenationFile
      * @param string $tableName
      *
@@ -133,7 +133,7 @@ class ResourceFileFromDatabaseCommand extends ResourceFileCommandBase
             throw new Exception('The database driver user is not supported!');
         }
 
-        $class = sprintf('CrestApps\CodeGenerator\DatabaseParsers\%sParser', ucfirst($driver));
+        $class = sprintf('IchieBenjamin\CodeGenerator\DatabaseParsers\%sParser', ucfirst($driver));
 
         return new $class($this->getTableName(), $this->getDatabaseName(), $this->getLanguages());
     }
@@ -221,10 +221,10 @@ class ResourceFileFromDatabaseCommand extends ResourceFileCommandBase
     /**
      * Make a migration capsule
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $tableName
      *
-     * @return CrestApps\CodeGenerator\Models\MigrationCapsule
+     * @return IchieBenjamin\CodeGenerator\Models\MigrationCapsule
      */
     protected function getMigrationCapsule($resource, $tableName)
     {

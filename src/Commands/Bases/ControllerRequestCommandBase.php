@@ -1,14 +1,14 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Bases;
+namespace IchieBenjamin\CodeGenerator\Commands\Bases;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\GeneratorReplacers;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\GeneratorReplacers;
 use Illuminate\Console\Command;
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Str;
 
 class ControllerRequestCommandBase extends Command
 {
@@ -83,7 +83,7 @@ class ControllerRequestCommandBase extends Command
     /**
      * Gets laravel ready field validation format for a given field
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @param string $customRules
      *
      * @return string

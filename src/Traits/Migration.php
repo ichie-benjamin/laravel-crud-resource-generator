@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Traits;
+namespace IchieBenjamin\CodeGenerator\Traits;
 
 use App;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Str;
 
 trait Migration
 {

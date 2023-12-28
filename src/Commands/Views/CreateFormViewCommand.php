@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Views;
+namespace IchieBenjamin\CodeGenerator\Commands\Views;
 
-use CrestApps\CodeGenerator\Commands\Bases\ViewsCommandBase;
-use CrestApps\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ViewsCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Resource;
 
 class CreateFormViewCommand extends ViewsCommandBase
 {

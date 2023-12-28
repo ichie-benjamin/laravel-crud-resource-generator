@@ -1,17 +1,17 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Bases;
+namespace IchieBenjamin\CodeGenerator\Commands\Bases;
 
-use CrestApps\CodeGenerator\HtmlGenerators\LaravelCollectiveHtml;
-use CrestApps\CodeGenerator\HtmlGenerators\StandardHtml;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Models\ViewInput;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\ViewLabelsGenerator;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\GeneratorReplacers;
+use IchieBenjamin\CodeGenerator\HtmlGenerators\LaravelCollectiveHtml;
+use IchieBenjamin\CodeGenerator\HtmlGenerators\StandardHtml;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Models\ViewInput;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\ViewLabelsGenerator;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\GeneratorReplacers;
 use Illuminate\Console\Command;
 
 abstract class ViewsCommandBase extends Command
@@ -134,7 +134,7 @@ abstract class ViewsCommandBase extends Command
      * It Replaces the primaryKey, modelNames, routeNames in a given stub
      *
      * @param string $stub
-     * @param CrestApps\CodeGenerator\Models\ViewInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\ViewInput $input
      *
      * @return $this
      */
@@ -158,7 +158,7 @@ abstract class ViewsCommandBase extends Command
      *
      * @param string $file
      * @param bool $force
-     * @param CrestApps\CodeGenerator\Models\Resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource
      *
      * @return bool
      */
@@ -401,7 +401,7 @@ abstract class ViewsCommandBase extends Command
      * @param string $modelName
      * @param string $template
      *
-     * @return CrestApps\CodeGenerator\HtmlGenerators\HtmlGeneratorBase
+     * @return IchieBenjamin\CodeGenerator\HtmlGenerators\HtmlGeneratorBase
      */
     protected function getHtmlGenerator(array $fields, $modelName, $template)
     {

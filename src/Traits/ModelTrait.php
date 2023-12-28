@@ -1,10 +1,10 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Traits;
+namespace IchieBenjamin\CodeGenerator\Traits;
 
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
 
 trait ModelTrait
 {

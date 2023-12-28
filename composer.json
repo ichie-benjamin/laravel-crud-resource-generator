@@ -1,40 +1,39 @@
 {
-    "name": "crestapps/laravel-code-generator",
+    "name": "ichie-benjamin/laravel-code-generator",
     "license": "MIT",
     "description": "An intelligent code generator for Laravel framework that will save you time! This awesome tool will help you generate resources like views, controllers, routes, migrations, languages and/or form-requests! It is extremely flexible and customizable to cover many on the use cases. It is shipped with cross-browsers compatible template, along with a client-side validation to modernize your application.",
-    "version": "v2.4.9",
+    "version": "v1",
     "keywords": [
         "laravel","crud","crud generator",
         "laravel crud generator","laravel crud builder",
         "crud builder","views creator","routes creator",
         "controller creator","code generator","generators","generator",
         "code generator", "laravel crud","laravel code generator",
-        "laravel-code-generator","code-generator","CrestApps",
+        "laravel-code-generator","code-generator","IchieBenjamin",
         "Alhayek", "Mike Alhayek","Majd Alhayek"
     ],
     "authors": [
         {
-            "name": "Majd Alhayek (Mike)",
-            "email": "mike@crestapps.com",
-            "homepage": "https://www.crestapps.com"
+            "name": "Ichie Benjamin",
+            "email": "ichiebenjaminchukwudi@gmail.com"
         }
     ],
     "require": {
-        "laravel/framework": ">=5.1"
+        "laravel/framework": ">=9"
     },
     "require-dev": {
-        "phpunit/phpunit" : "^5.0||^6.0||^7.0",
+        "phpunit/phpunit" : "^10",
         "orchestra/testbench": "~3.0",
-        "mockery/mockery": "~0.9||~1.0"
+        "mockery/mockery": "^1.4"
     },
     "autoload": {
         "psr-4": {
-            "CrestApps\\CodeGenerator\\": "src/"
+            "IchieBenjamin\\CodeGenerator\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CrestApps\\CodeGenerator\\Tests\\": "tests/"
+            "IchieBenjamin\\CodeGenerator\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -48,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CrestApps\\CodeGenerator\\CodeGeneratorServiceProvider"
+                "IchieBenjamin\\CodeGenerator\\CodeGeneratorServiceProvider"
             ]
         }
     }

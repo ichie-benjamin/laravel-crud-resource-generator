@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Commands\Bases\CreateScaffoldCommandBase;
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Models\ScaffoldInput;
+use IchieBenjamin\CodeGenerator\Commands\Bases\CreateScaffoldCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Models\ScaffoldInput;
 
 class CreateScaffoldCommand extends CreateScaffoldCommandBase
 {
@@ -67,7 +67,7 @@ class CreateScaffoldCommand extends CreateScaffoldCommandBase
 
         $this->beforeScaffold($input);
 
-        $resource = Resource::fromFile($input->resourceFile, $input->languageFileName ?: 'CrestApps');
+        $resource = Resource::fromFile($input->resourceFile, $input->languageFileName ?: 'IchieBenjamin');
 
         $this->validateField($resource->fields)
             ->printInfo('Scaffolding web-based resources for ' . $this->modelNamePlainEnglish($input->modelName) . '...')
@@ -83,7 +83,7 @@ class CreateScaffoldCommand extends CreateScaffoldCommandBase
     /**
      * Executes the command that generates all the views.
      *
-     * @param CrestApps\CodeGenerator\Models\ScaffoldInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\ScaffoldInput $input
      *
      * @return $this
      */
@@ -110,7 +110,7 @@ class CreateScaffoldCommand extends CreateScaffoldCommandBase
     /**
      * Executes the command that generates the controller.
      *
-     * @param CrestApps\CodeGenerator\Models\ScaffoldInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\ScaffoldInput $input
      * @return $this
      */
     protected function createController(ScaffoldInput $input)
@@ -145,8 +145,8 @@ class CreateScaffoldCommand extends CreateScaffoldCommandBase
     /**
      * Executes the command that generates the routes.
      *
-     * @param CrestApps\CodeGenerator\Models\ScaffoldInput $input
-     * @param CrestApps\CodeGenerator\Models\Field $primaryField
+     * @param IchieBenjamin\CodeGenerator\Models\ScaffoldInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\Field $primaryField
      *
      * @return $this
      */
@@ -172,7 +172,7 @@ class CreateScaffoldCommand extends CreateScaffoldCommandBase
     /**
      * Gets a clean user inputs.
      *
-     * @return CrestApps\CodeGenerator\Models\ScaffoldInput
+     * @return IchieBenjamin\CodeGenerator\Models\ScaffoldInput
      */
     protected function getCommandInput()
     {

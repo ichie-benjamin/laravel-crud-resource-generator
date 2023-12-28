@@ -1,17 +1,17 @@
 <?php
-namespace CrestApps\CodeGenerator\DatabaseParsers;
+namespace IchieBenjamin\CodeGenerator\DatabaseParsers;
 
 use App;
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\FieldMapper;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\FieldsOptimizer;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\ResourceMapper;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\ModelTrait;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\FieldMapper;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\FieldsOptimizer;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\ResourceMapper;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\ModelTrait;
 use Exception;
 
 abstract class ParserBase
@@ -105,7 +105,7 @@ abstract class ParserBase
     /**
      * Gets the final resource.
      *
-     * @return CrestApps\CodeGenerator\Models\Resource
+     * @return IchieBenjamin\CodeGenerator\Models\Resource
      */
     public function getResource()
     {
@@ -120,7 +120,7 @@ abstract class ParserBase
     /**
      * Check if the given fields contains autoManagedFields
      *
-     * @return CrestApps\CodeGenerator\Models\Resource
+     * @return IchieBenjamin\CodeGenerator\Models\Resource
      */
     protected function containsUpdateAtAndCreatedAt($fields)
     {
@@ -133,7 +133,7 @@ abstract class ParserBase
     /**
      * Gets the final resource.
      *
-     * @return CrestApps\CodeGenerator\Models\Resource
+     * @return IchieBenjamin\CodeGenerator\Models\Resource
      */
     public function getResourceAsJson()
     {
@@ -163,7 +163,7 @@ abstract class ParserBase
     /**
      * Get the html type for a given field.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @param string $type
      *
      * @return string
@@ -182,7 +182,7 @@ abstract class ParserBase
     /**
      * Set the html type for a given field.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @param string $type
      *
      * @return $this
@@ -234,21 +234,21 @@ abstract class ParserBase
     /**
      * Transfers every column in the given array to a collection of fields.
      *
-     * @return array of CrestApps\CodeGenerator\Models\Field;
+     * @return array of IchieBenjamin\CodeGenerator\Models\Field;
      */
     abstract protected function getTransfredFields(array $columns);
 
     /**
      * Get all available indexed
      *
-     * @return array of CrestApps\CodeGenerator\Models\Index;
+     * @return array of IchieBenjamin\CodeGenerator\Models\Index;
      */
     abstract protected function getIndexes();
 
     /**
      * Get all available relations
      *
-     * @return array of CrestApps\CodeGenerator\Models\ForeignRelationship;
+     * @return array of IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
      */
     abstract protected function getRelations();
 

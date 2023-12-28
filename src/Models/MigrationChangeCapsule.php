@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Support\Contracts\ChangeDetector;
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Support\Contracts\ChangeDetector;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
 
 class MigrationChangeCapsule implements JsonWriter, ChangeDetector
 {

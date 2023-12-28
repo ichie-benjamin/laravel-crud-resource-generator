@@ -1,12 +1,12 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase;
-use CrestApps\CodeGenerator\Models\ScaffoldInput;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase;
+use IchieBenjamin\CodeGenerator\Models\ScaffoldInput;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 use Exception;
 use Illuminate\Console\Command;
 
@@ -122,9 +122,9 @@ class CreateMappedResourcesCommand extends Command
      * Gets valid input collection
      *
      * @param array $object
-     * @param CrestApps\CodeGenerator\Models\ResourceInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\ResourceInput $input
      *
-     * @return array of CrestApps\CodeGenerator\Models\ScaffoldInput
+     * @return array of IchieBenjamin\CodeGenerator\Models\ScaffoldInput
      */
     protected function getValidInputs(array $objects, ScaffoldInput $originalInput)
     {
@@ -245,7 +245,7 @@ class CreateMappedResourcesCommand extends Command
     /**
      * Gets a clean user inputs.
      *
-     * @return CrestApps\CodeGenerator\Models\ScaffoldInput
+     * @return IchieBenjamin\CodeGenerator\Models\ScaffoldInput
      */
     protected function getCommandInput()
     {

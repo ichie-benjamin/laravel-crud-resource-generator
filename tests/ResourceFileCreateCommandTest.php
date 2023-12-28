@@ -6,7 +6,7 @@
  * Time: 5:31 AM
  */
 
-namespace CrestApps\CodeGenerator\Tests;
+namespace IchieBenjamin\CodeGenerator\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Artisan;

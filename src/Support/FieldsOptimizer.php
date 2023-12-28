@@ -1,10 +1,10 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Str;
 
 class FieldsOptimizer
 {
@@ -37,7 +37,7 @@ class FieldsOptimizer
     /**
      * Gets the optimized fields.
      *
-     * @return CrestApps\CodeGenerator\Models\Field
+     * @return IchieBenjamin\CodeGenerator\Models\Field
      */
     public function getFields()
     {
@@ -68,7 +68,7 @@ class FieldsOptimizer
     /**
      * Adds field to the fields collection.
      *
-     * @param CrestApps\CodeGenerator\Model\Field $field
+     * @param IchieBenjamin\CodeGenerator\Model\Field $field
      *
      * @return void
      */
@@ -107,7 +107,7 @@ class FieldsOptimizer
     /**
      * given a mappers collection, it'll update the the field by making one as primary title
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @return bool
      */
     protected function assignPrimaryTitle(array &$mappers)
@@ -138,7 +138,7 @@ class FieldsOptimizer
     /**
      * It checks if a given field is a primary or not.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @return bool
      */
     protected function isPrimaryHeader(Field $field)

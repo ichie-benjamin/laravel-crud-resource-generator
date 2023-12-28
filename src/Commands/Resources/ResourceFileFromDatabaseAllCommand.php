@@ -1,13 +1,13 @@
 <?php
 
 
-namespace CrestApps\CodeGenerator\Commands\Resources;
+namespace IchieBenjamin\CodeGenerator\Commands\Resources;
 
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\ResourceMapper;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
-use CrestApps\CodeGenerator\Traits\Migration;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\ResourceMapper;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Traits\Migration;
 use DB;
 
 class ResourceFileFromDatabaseAllCommand extends ResourceFileFromDatabaseCommand
@@ -70,7 +70,7 @@ class ResourceFileFromDatabaseAllCommand extends ResourceFileFromDatabaseCommand
             throw new \Exception("The database driver [$driver] is not supported!");
         }
 
-        $class = sprintf('CrestApps\CodeGenerator\DatabaseParsers\%sParser', ucfirst($driver));
+        $class = sprintf('IchieBenjamin\CodeGenerator\DatabaseParsers\%sParser', ucfirst($driver));
 
         return new $class($this->table, $this->getDatabaseName(), $this->getLanguages());
     }

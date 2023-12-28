@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Commands\Bases\ControllerCommandBase;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ControllerCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 
 class CreateControllerCommand extends ControllerCommandBase
 {

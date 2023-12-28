@@ -6,7 +6,7 @@
  * Time: 3:20 AM
  */
 
-namespace CrestApps\CodeGenerator\Tests;
+namespace IchieBenjamin\CodeGenerator\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 
@@ -14,7 +14,7 @@ class TestCase extends BaseTestCase
 {
     protected function getPackageProviders($app)
     {
-        return ['CrestApps\CodeGenerator\CodeGeneratorServiceProvider'];
+        return ['IchieBenjamin\CodeGenerator\CodeGeneratorServiceProvider'];
     }
 
     /**

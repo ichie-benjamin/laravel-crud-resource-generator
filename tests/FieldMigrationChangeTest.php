@@ -6,11 +6,11 @@
  * Time: 1:28 AM
  */
 
-namespace CrestApps\CodeGenerator\Tests;
+namespace IchieBenjamin\CodeGenerator\Tests;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\FieldMigrationChange;
-use CrestApps\CodeGenerator\Models\ForeignConstraint;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\FieldMigrationChange;
+use IchieBenjamin\CodeGenerator\Models\ForeignConstraint;
 
 class FieldMigrationChangeTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
 use Exception;
 
 class Index implements JsonWriter
@@ -224,7 +224,7 @@ class Index implements JsonWriter
     /**
      * Gets an index from an array.
      *
-     * @var CrestApps\CodeGenerator\Models\Index
+     * @var IchieBenjamin\CodeGenerator\Models\Index
      */
     public static function get(array $properties)
     {
@@ -252,7 +252,7 @@ class Index implements JsonWriter
     /**
      * Gets an index from a raw string.
      *
-     * @var CrestApps\CodeGenerator\Models\Index
+     * @var IchieBenjamin\CodeGenerator\Models\Index
      */
     public static function fromString($rawIndex)
     {

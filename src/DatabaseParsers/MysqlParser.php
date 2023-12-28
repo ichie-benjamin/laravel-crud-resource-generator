@@ -1,15 +1,15 @@
 <?php
-namespace CrestApps\CodeGenerator\DatabaseParsers;
+namespace IchieBenjamin\CodeGenerator\DatabaseParsers;
 
 use App;
-use CrestApps\CodeGenerator\Models\ForeignConstraint;
-use CrestApps\CodeGenerator\Models\ForeignRelationship;
-use CrestApps\CodeGenerator\Models\Index;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\FieldTransformer;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
-use CrestApps\CodeGenerator\Traits\ModelTrait;
+use IchieBenjamin\CodeGenerator\Models\ForeignConstraint;
+use IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
+use IchieBenjamin\CodeGenerator\Models\Index;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\FieldTransformer;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Traits\ModelTrait;
 use DB;
 use Exception;
 
@@ -129,7 +129,7 @@ class MysqlParser extends ParserBase
     /**
      * Get all available relations
      *
-     * @return array of CrestApps\CodeGenerator\Models\ForeignRelationship;
+     * @return array of IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
      */
     protected function getRelations()
     {
@@ -185,7 +185,7 @@ class MysqlParser extends ParserBase
     /**
      * Get a corresponding relation to a given table name, foreign column and local column.
      *
-     * @return CrestApps\CodeGenerator\Models\ForeignRelationship
+     * @return IchieBenjamin\CodeGenerator\Models\ForeignRelationship
      */
     protected function getRealtion($foreignTableName, $foreignColumn, $localColumn, $selfReferences)
     {
@@ -223,7 +223,7 @@ class MysqlParser extends ParserBase
     /**
      * Get all available indexed
      *
-     * @return array of CrestApps\CodeGenerator\Models\Index;
+     * @return array of IchieBenjamin\CodeGenerator\Models\Index;
      */
     protected function getIndexes()
     {
@@ -245,7 +245,7 @@ class MysqlParser extends ParserBase
      *
      * @param object $column
      *
-     * @return CrestApps\CodeGenerator\Model\Field;
+     * @return IchieBenjamin\CodeGenerator\Model\Field;
      */
     protected function getTransfredFields(array $columns)
     {
@@ -349,7 +349,7 @@ class MysqlParser extends ParserBase
      *
      * @param string $name
      *
-     * @return null || CrestApps\CodeGenerator\Models\ForeignConstraint
+     * @return null || IchieBenjamin\CodeGenerator\Models\ForeignConstraint
      */
     protected function getForeignConstraint($name)
     {
@@ -373,7 +373,7 @@ class MysqlParser extends ParserBase
     /**
      * Set the options for a given field.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @param string $type
      *
      * @return array

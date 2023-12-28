@@ -1,7 +1,7 @@
 <?php
-namespace CrestApps\CodeGenerator\Traits;
+namespace IchieBenjamin\CodeGenerator\Traits;
 
-use CrestApps\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Str;
 
 trait GeneratorReplacers
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\FieldMapper;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\FieldsOptimizer;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\GeneratorReplacers;
-use CrestApps\CodeGenerator\Traits\LabelTransformerTrait;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\FieldMapper;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\FieldsOptimizer;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\GeneratorReplacers;
+use IchieBenjamin\CodeGenerator\Traits\LabelTransformerTrait;
 use Exception;
 
 class FieldTransformer

@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 use Illuminate\Console\Command;
 
 class CreateResourcesCommand extends Command

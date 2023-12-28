@@ -48,7 +48,7 @@
  - Added the ability to delete already uploaded file in edit mode.
  - The CodeGenerator allows you to add compound index in the resource-file directly to give you the ability to reuse the setting in the future.
  - The CodeGenerator allows you to add any type of relation in the resource-file directly to give you the ability to reuse the setting in the future.
- - New configuration option was added (i.e. `irregular_plurals`) to allow you to define a non-english singular to plural words. This is helpfull if your coding using a non-english language like Spanish or Frensh. For more info go to https://github.com/CrestApps/laravel-code-generator/pull/25
+ - New configuration option was added (i.e. `irregular_plurals`) to allow you to define a non-english singular to plural words. This is helpfull if your coding using a non-english language like Spanish or Frensh. For more info go to https://github.com/IchieBenjamin/laravel-code-generator/pull/25
  - Added `plural_names_for` config option to allow the user to set whether to create the resource in a plural or singular version.
  - Added `controller_name_postfix` config option to allow the user to change the controller post-fix or even remove it altogether.
  - Added `form_request_name_postfix` config option to allow the user to change the form-request post-fix or even remove it altogether.

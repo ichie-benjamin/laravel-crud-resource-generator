@@ -1,14 +1,14 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\ApiDocs;
+namespace IchieBenjamin\CodeGenerator\Commands\ApiDocs;
 
-use CrestApps\CodeGenerator\Commands\Bases\ControllerCommandBase;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\ApiDocViewsTrait;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ControllerCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\ApiDocViewsTrait;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
 
 class CreateApiDocsControllerCommand extends ControllerCommandBase
 {

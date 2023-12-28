@@ -1,10 +1,10 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Bases;
+namespace IchieBenjamin\CodeGenerator\Commands\Bases;
 
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 use Illuminate\Console\Command;
 
 class ResourceFileCommandBase extends Command
@@ -17,7 +17,7 @@ class ResourceFileCommandBase extends Command
      * @param string $file
      * @param array $languages
      *
-     * @return CrestApps\CodeGenerator\Models\Resource
+     * @return IchieBenjamin\CodeGenerator\Models\Resource
      */
     protected function getResources($file, array $languages = [])
     {

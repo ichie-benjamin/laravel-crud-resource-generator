@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 
 class MigrationInput
 {

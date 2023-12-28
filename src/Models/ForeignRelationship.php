@@ -1,14 +1,14 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\ResourceMapper;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\ModelTrait;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\ResourceMapper;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\ModelTrait;
 use DB;
 use Exception;
 use File;
@@ -356,7 +356,7 @@ class ForeignRelationship implements JsonWriter
     /**
      * Gets the foreign model fields from resource file
      *
-     * @return mix (null | CrestApps\CodeGenerator\Models\Resource)
+     * @return mix (null | IchieBenjamin\CodeGenerator\Models\Resource)
      */
     protected function getForeignResource()
     {
@@ -426,7 +426,7 @@ class ForeignRelationship implements JsonWriter
      * @param array $options
      * @throws Exception
      *
-     * @return mix (null | CrestApps\CodeGenerator\Model\ForeignRelationship)
+     * @return mix (null | IchieBenjamin\CodeGenerator\Model\ForeignRelationship)
      */
     public static function get(array $options)
     {
@@ -472,7 +472,7 @@ class ForeignRelationship implements JsonWriter
      *
      * @param string $rawRelation
      *
-     * @return null | CrestApps\CodeGenerator\Model\ForeignRelationship
+     * @return null | IchieBenjamin\CodeGenerator\Model\ForeignRelationship
      */
     public static function fromString($rawRelation)
     {
@@ -515,7 +515,7 @@ class ForeignRelationship implements JsonWriter
      * @param string $fieldName
      * @param string $modelPath
      *
-     * @return null | CrestApps\CodeGenerator\Model\ForeignRelationship
+     * @return null | IchieBenjamin\CodeGenerator\Model\ForeignRelationship
      */
     public static function predict($fieldName, $modelPath)
     {

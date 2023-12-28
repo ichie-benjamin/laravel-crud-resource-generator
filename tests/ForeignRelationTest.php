@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Tests;
+namespace IchieBenjamin\CodeGenerator\Tests;
 
-use CrestApps\CodeGenerator\Tests\TestCase;
-use CrestApps\CodeGenerator\Models\ForeignRelationship;
+use IchieBenjamin\CodeGenerator\Tests\TestCase;
+use IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
 
 class ForeignRelationTest extends TestCase
 {

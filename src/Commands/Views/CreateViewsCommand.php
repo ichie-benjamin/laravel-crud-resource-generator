@@ -1,10 +1,10 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Views;
+namespace IchieBenjamin\CodeGenerator\Commands\Views;
 
-use CrestApps\CodeGenerator\Commands\Bases\ViewsCommandBase;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ViewsCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Arr;
 
 class CreateViewsCommand extends ViewsCommandBase
 {

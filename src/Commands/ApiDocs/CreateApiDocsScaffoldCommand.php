@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\ApiDocs;
+namespace IchieBenjamin\CodeGenerator\Commands\ApiDocs;
 
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\ApiDocViewsTrait;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\ScaffoldTrait;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\ApiDocViewsTrait;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\ScaffoldTrait;
 use Illuminate\Console\Command;
 
 class CreateApiDocsScaffoldCommand extends command

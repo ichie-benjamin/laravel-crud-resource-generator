@@ -1,13 +1,13 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 use Exception;
 use File;
 use Illuminate\Console\Command;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 
 class ResourceMapper
 {
@@ -146,7 +146,7 @@ class ResourceMapper
     /**
      * Gets the resources
      *
-     * @return CrestApps\CodeGenerator\Models\Resource
+     * @return IchieBenjamin\CodeGenerator\Models\Resource
      */
     protected function getResources()
     {

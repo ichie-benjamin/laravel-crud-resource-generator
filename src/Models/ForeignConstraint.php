@@ -1,12 +1,12 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models;
+namespace IchieBenjamin\CodeGenerator\Models;
 
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Contracts\JsonWriter;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\ModelTrait;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Contracts\JsonWriter;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\ModelTrait;
 
 class ForeignConstraint implements JsonWriter
 {
@@ -111,7 +111,7 @@ class ForeignConstraint implements JsonWriter
     /**
      * Get a foreign relation.
      *
-     * @return CrestApps\CodeGenerator\Models\ForeignRelatioship
+     * @return IchieBenjamin\CodeGenerator\Models\ForeignRelatioship
      */
     public function getForeignRelation()
     {
@@ -188,7 +188,7 @@ class ForeignConstraint implements JsonWriter
      * @param array $properties
      * @param string $fieldName
      *
-     * @return null || CrestApps\CodeGenerator\Models\ForeignConstraint
+     * @return null || IchieBenjamin\CodeGenerator\Models\ForeignConstraint
      */
     public static function fromArray(array $constraint, $fieldName)
     {

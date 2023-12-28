@@ -1,20 +1,20 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\ApiDocs;
+namespace IchieBenjamin\CodeGenerator\Commands\ApiDocs;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\Label;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\ViewLabelsGenerator;
-use CrestApps\CodeGenerator\Traits\ApiDocViewsTrait;
-use CrestApps\CodeGenerator\Traits\ApiResourceTrait;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\GeneratorReplacers;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
-use CrestApps\CodeGenerator\Traits\RouteTrait;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\Label;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\ViewLabelsGenerator;
+use IchieBenjamin\CodeGenerator\Traits\ApiDocViewsTrait;
+use IchieBenjamin\CodeGenerator\Traits\ApiResourceTrait;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\GeneratorReplacers;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Traits\RouteTrait;
 use Illuminate\Console\Command;
 
 class CreateApiDocsViewCommand extends Command
@@ -360,7 +360,7 @@ class CreateApiDocsViewCommand extends Command
     /**
      * Build the model class with the given name.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $destenationFile
      *
      * @return bool
@@ -409,7 +409,7 @@ class CreateApiDocsViewCommand extends Command
     /**
      * Get a view ready label accessor.
      *
-     * @param  CrestApps\CodeGenerator\Model\Label $label
+     * @param  IchieBenjamin\CodeGenerator\Model\Label $label
      *
      * @return string
      */

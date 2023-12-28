@@ -1,6 +1,6 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Models\Bases;
+namespace IchieBenjamin\CodeGenerator\Models\Bases;
 
 class ScaffoldInputBase
 {

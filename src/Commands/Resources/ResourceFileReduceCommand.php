@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Resources;
+namespace IchieBenjamin\CodeGenerator\Commands\Resources;
 
-use CrestApps\CodeGenerator\Commands\Bases\ResourceFileCommandBase;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ResourceFileCommandBase;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 
 class ResourceFileReduceCommand extends ResourceFileCommandBase
 {
@@ -88,7 +88,7 @@ class ResourceFileReduceCommand extends ResourceFileCommandBase
     /**
      * Reduces the fields from a given resource.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource &$resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource &$resource
      * @param array $$fieldNames
      *
      * @return mixed
@@ -114,7 +114,7 @@ class ResourceFileReduceCommand extends ResourceFileCommandBase
     /**
      * Reduces the indexes from a given resource.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource &$resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource &$resource
      * @param array $indexNames
      *
      * @return mixed
@@ -142,7 +142,7 @@ class ResourceFileReduceCommand extends ResourceFileCommandBase
     /**
      * Reduces the relations from a given resource.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource &$resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource &$resource
      * @param array $relationNames
      *
      * @return mixed

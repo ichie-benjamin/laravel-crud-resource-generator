@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
-use CrestApps\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Config;
 use Illuminate\Support\Str as LaravelStr;
 
 class Str extends LaravelStr

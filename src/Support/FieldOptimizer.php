@@ -1,11 +1,11 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Support;
+namespace IchieBenjamin\CodeGenerator\Support;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\ValidationParser;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\ValidationParser;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 
 class FieldOptimizer
 {
@@ -14,7 +14,7 @@ class FieldOptimizer
     /**
      * The field to optimize
      *
-     * @var CrestApps\CodeGenerator\Models\Field
+     * @var IchieBenjamin\CodeGenerator\Models\Field
      */
     protected $field;
 
@@ -35,7 +35,7 @@ class FieldOptimizer
     /**
      * Create a new optemizer instance.
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      * @param array $meta
      *
      * @return void
@@ -50,7 +50,7 @@ class FieldOptimizer
     /**
      * Gets the optimized field.
      *
-     * @return CrestApps\CodeGenerator\Models\Field
+     * @return IchieBenjamin\CodeGenerator\Models\Field
      */
     public function getField()
     {
@@ -202,7 +202,7 @@ class FieldOptimizer
      * Ensure, the datatype is set to be valid otherwise make it "int".
      * It also make sure the primary column does not appears on the views unless it specified
      *
-     * @param CrestApps\CodeGenerator\Models\Field $this->field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $this->field
      *
      * @return $this
      */

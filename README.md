@@ -1,13 +1,13 @@
 
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=An%20intelligent%20code%20generator%20for%20Laravel%20framework%20which%20will%20save%20you%20lots%20of%20time!&url=https://github.com/CrestApps/laravel-code-generator&hashtags=laravel,laravel-code-generator,laravel-crud,code-generator,crud-generator,laravel-crud-generator)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=An%20intelligent%20code%20generator%20for%20Laravel%20framework%20which%20will%20save%20you%20lots%20of%20time!&url=https://github.com/IchieBenjamin/laravel-code-generator&hashtags=laravel,laravel-code-generator,laravel-crud,code-generator,crud-generator,laravel-crud-generator)
 
 ## Introduction
 
 An intelligent code generator for Laravel framework that will save you time! This awesome tool will help you generate resources like views, controllers, routes, migrations, languages and/or form-requests! It is extremely flexible and customizable to cover many on the use cases. It is shipped with cross-browsers compatible template, along with a client-side validation to modernize your application.
 
-For full documentation and live demo please visit <a href="https://crestapps.com/laravel-code-generator/docs/2.3" target="_blank" title="Laravel Code Generator Documentation">CrestApps.com</a>
+For full documentation and live demo please visit <a href="https://crestapps.com/laravel-code-generator/docs/2.3" target="_blank" title="Laravel Code Generator Documentation">IchieBenjamin.com</a>
 
-**Note: ** The available documentation is for versions <= 2.2. The documentation for vertion 2.3+ is very similar with some exceptions. Please review the <a href="https://github.com/CrestApps/laravel-code-generator/blob/master/CHANGELOG.md" title="ChangeLog">Change Log</a> to get a list of the changes.
+**Note: ** The available documentation is for versions <= 2.2. The documentation for vertion 2.3+ is very similar with some exceptions. Please review the <a href="https://github.com/IchieBenjamin/laravel-code-generator/blob/master/CHANGELOG.md" title="ChangeLog">Change Log</a> to get a list of the changes.
 
 ## Features
 
@@ -57,14 +57,14 @@ For full documentation and live demo please visit <a href="https://crestapps.com
 
 	```
 	if ($this->app->runningInConsole()) {
-	    $this->app->register('CrestApps\CodeGenerator\CodeGeneratorServiceProvider');
+	    $this->app->register('IchieBenjamin\CodeGenerator\CodeGeneratorServiceProvider');
 	}
 	```
 
 > A layout is required for the default views! The code generator allows you to create a layout using the command-line. Of cource you can use your own layout. You'll only need to include [CSS bootstrap framework](http://getbootstrap.com/ "CSS bootstrap framework") in your layout for the default templates to work properly. Additionally, you can chose to you design your own templetes using a different or no css framework. 
 
 ## Lessons
-Checkout our channel on <a href="https://www.youtube.com/channel/UCkEd0nOoRf3o0ahspAu7Y9w/videos" target="_blank" title="CrestApps YouTube Channel">YouTube.com</a> 
+Checkout our channel on <a href="https://www.youtube.com/channel/UCkEd0nOoRf3o0ahspAu7Y9w/videos" target="_blank" title="IchieBenjamin YouTube Channel">YouTube.com</a> 
 * https://youtu.be/l21qNcsMAWg
 * https://youtu.be/infoecfXOCw
 
@@ -131,9 +131,9 @@ Checkout our channel on <a href="https://www.youtube.com/channel/UCkEd0nOoRf3o0a
 </li>
 </ul>
 
-> Full documentation available at [CrestApps.com](https://www.crestapps.com/laravel-code-generator/docs/2.3 "Laravel Code Generator Documentation"). 
+> Full documentation available at [IchieBenjamin.com](https://www.crestapps.com/laravel-code-generator/docs/2.3 "Laravel Code Generator Documentation"). 
 
-> Live demo is available at [CrestApps.com](https://www.crestapps.com/laravel-code-generator/demos/v2-3 "Laravel Code Generator Live Demo"). 
+> Live demo is available at [IchieBenjamin.com](https://www.crestapps.com/laravel-code-generator/demos/v2-3 "Laravel Code Generator Live Demo"). 
 
 ## Upgrading from version  <= 2.2 to 2.3+
  - Delete the `codegenerator.php` file found in your `config` folder, then rename the `codegenerator_custom.php` file to `laravel-code-generator.php` if one exists. Alternatively, you can delete both `codegenerator.php` and `codegenerator_custom.php`
@@ -141,7 +141,7 @@ Checkout our channel on <a href="https://www.youtube.com/channel/UCkEd0nOoRf3o0a
 
 ## Contribution
 Do you like this project and want to contribute?
-- **HELP WANTED** Version `v2.3` needs to be documented. If you are able to contribute, please read the <a href="https://github.com/CrestApps/laravel-code-generator/blob/v2.3/CHANGELOG.md">change-log</a> in <a href="https://github.com/CrestApps/laravel-code-generator/tree/v2.3">v2.3 branch</a> and document it in the <a href="https://github.com/CrestApps/crestapps-site">CrestApps-site</a> repository. For any help, my email can be found in the `composer.json` file, feel free to send me an email.
+- **HELP WANTED** Version `v2.3` needs to be documented. If you are able to contribute, please read the <a href="https://github.com/IchieBenjamin/laravel-code-generator/blob/v2.3/CHANGELOG.md">change-log</a> in <a href="https://github.com/IchieBenjamin/laravel-code-generator/tree/v2.3">v2.3 branch</a> and document it in the <a href="https://github.com/IchieBenjamin/crestapps-site">IchieBenjamin-site</a> repository. For any help, my email can be found in the `composer.json` file, feel free to send me an email.
 - **HELP WANTED** Need to create a new theme for Bootstrap 5 and make it the default. If interested, please submit a PR.
 - Please start by ***Staring*** this package on GitHub.
 - Sharing this projects with others is your way of saying keep improvements and new awesome feature coming.

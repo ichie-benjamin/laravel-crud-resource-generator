@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Migrations;
+namespace IchieBenjamin\CodeGenerator\Commands\Migrations;
 
-use CrestApps\CodeGenerator\Commands\Bases\MigrationCommandBase;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Commands\Bases\MigrationCommandBase;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 use Illuminate\Console\ConfirmableTrait;
 use Illuminate\Database\Migrations\Migrator;
 

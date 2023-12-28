@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Bases;
+namespace IchieBenjamin\CodeGenerator\Commands\Bases;
 
-use CrestApps\CodeGenerator\Traits\Migration;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\Migration;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 use Illuminate\Console\Command;
 
 class MigrationCommandBase extends Command

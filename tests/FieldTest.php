@@ -1,9 +1,9 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Tests;
+namespace IchieBenjamin\CodeGenerator\Tests;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Support\FieldTransformer;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Support\FieldTransformer;
 
 class FieldTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Views;
+namespace IchieBenjamin\CodeGenerator\Commands\Views;
 
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 use Illuminate\Console\Command;
 
 class CreateLayoutCommand extends Command

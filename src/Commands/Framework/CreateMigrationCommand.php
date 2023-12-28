@@ -1,22 +1,22 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Commands\Bases\MigrationCommandBase;
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\ForeignConstraint;
-use CrestApps\CodeGenerator\Models\Label;
-use CrestApps\CodeGenerator\Models\MigrationCapsule;
-use CrestApps\CodeGenerator\Models\MigrationChangeCapsule;
-use CrestApps\CodeGenerator\Models\MigrationInput;
-use CrestApps\CodeGenerator\Models\MigrationTrackerCapsule;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\MigrationHistoryTracker;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Commands\Bases\MigrationCommandBase;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\ForeignConstraint;
+use IchieBenjamin\CodeGenerator\Models\Label;
+use IchieBenjamin\CodeGenerator\Models\MigrationCapsule;
+use IchieBenjamin\CodeGenerator\Models\MigrationChangeCapsule;
+use IchieBenjamin\CodeGenerator\Models\MigrationInput;
+use IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\MigrationHistoryTracker;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
 use Exception;
 use File;
 
@@ -148,7 +148,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      *
      * @throws Exception
      *
-     * @return CrestApps\CodeGenerator\Models\Resource
+     * @return IchieBenjamin\CodeGenerator\Models\Resource
      */
     protected function getCurrentResource($resourceFile)
     {
@@ -164,9 +164,9 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Gets a new migration capsule
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      *
-     * @return CrestApps\CodeGenerator\Models\MigrationTrackerCapsule
+     * @return IchieBenjamin\CodeGenerator\Models\MigrationTrackerCapsule
      */
     protected function getMigrationTrackerCapsule(MigrationInput $input)
     {
@@ -176,12 +176,12 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Make a migration capsule
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $name
      * @param bool $isCreate
      *
-     * @return CrestApps\CodeGenerator\Models\MigrationCapsule
+     * @return IchieBenjamin\CodeGenerator\Models\MigrationCapsule
      */
     protected function getMigrationCapsule(MigrationInput $input, $resource, $name, $isCreate = true)
     {
@@ -218,8 +218,8 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Make a create migration
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
-     * @param CrestApps\CodeGenerator\Models\MigrationCapsule $migration
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationCapsule $migration
      *
      * @return void
      */
@@ -239,9 +239,9 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Make an alter migration
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
-     * @param CrestApps\CodeGenerator\Models\MigrationCapsule $migration
-     * @param CrestApps\CodeGenerator\Models\MigrationChangeCapsule $changeCapsule
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationCapsule $migration
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationChangeCapsule $changeCapsule
      *
      * @return void
      */
@@ -261,8 +261,8 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Creates the table properties.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      *
      * @return string
      */
@@ -286,8 +286,8 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Gets a list of all column that are used in the given migration
      *
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      *
      * @return string
      */
@@ -331,9 +331,9 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Gets Foreign contstrains from given fields.
      *
-     * @param array of CrestApps\CodeGenerator\Models\Field $field
+     * @param array of IchieBenjamin\CodeGenerator\Models\Field $field
      *
-     * @return array of CrestApps\CodeGenerator\Models\ForeignConstraint $field
+     * @return array of IchieBenjamin\CodeGenerator\Models\ForeignConstraint $field
      */
     protected function getConstraintsFromfields(array $fields)
     {
@@ -352,7 +352,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds 'foreign' eloquent method to a given properties.
      *
      * @param string $properties
-     * @param CrestApps\CodeGenerator\Models\ForeignConstraint $constraint
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignConstraint $constraint
      *
      * @return $this
      */
@@ -367,7 +367,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds 'references' eloquent method to a given properties.
      *
      * @param string $properties
-     * @param CrestApps\CodeGenerator\Models\ForeignConstraint $constraint
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignConstraint $constraint
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds 'on' eloquent method to a given properties.
      *
      * @param string $properties
-     * @param CrestApps\CodeGenerator\Models\ForeignConstraint $constraint
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignConstraint $constraint
      *
      * @return $this
      */
@@ -397,7 +397,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds 'onDelete' eloquent method to a given properties.
      *
      * @param string $properties
-     * @param CrestApps\CodeGenerator\Models\ForeignConstraint $constraint
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignConstraint $constraint
      *
      * @return $this
      */
@@ -414,7 +414,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds 'onUpdate' eloquent method to a given properties.
      *
      * @param string $properties
-     * @param CrestApps\CodeGenerator\Models\ForeignConstraint $constraint
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignConstraint $constraint
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds a 'field type' to the property
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -557,7 +557,7 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Constructs the second parameter to the type method
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return string
      */
@@ -575,7 +575,7 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Constructs the second parameter to the enum type method
      *
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return string
      */
@@ -647,7 +647,7 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Constructs the schema down command.
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      *
      * @return string
      */
@@ -664,8 +664,8 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Creates the table properties.
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
-     * @param CrestApps\CodeGenerator\Models\MigrationChangeCapsule $changeCapsule
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationChangeCapsule $changeCapsule
      *
      * @return string
      */
@@ -744,8 +744,8 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Get the schema down blueprint for alter command.
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
-     * @param CrestApps\CodeGenerator\Models\MigrationChangeCapsule $changeCapsule
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationChangeCapsule $changeCapsule
      *
      * @return string
      */
@@ -831,7 +831,7 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Constructs the schema down command.
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      * @param string $blueprintBody
      *
      * @return string
@@ -851,7 +851,7 @@ class CreateMigrationCommand extends MigrationCommandBase
     /**
      * Constructs the schema up command.
      *
-     * @param CrestApps\CodeGenerator\Models\MigrationInput $input
+     * @param IchieBenjamin\CodeGenerator\Models\MigrationInput $input
      *
      * @return string
      */
@@ -938,7 +938,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the field's "default" value to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -955,7 +955,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the field's "unsigned" value to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -1007,7 +1007,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the field's "unique" value to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -1024,7 +1024,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the field's "index" value to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -1041,7 +1041,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds an index
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Index $index
+     * @param IchieBenjamin\CodeGenerator\Models\Index $index
      *
      * @return $this
      */
@@ -1056,7 +1056,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * drop an index
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Index $index
+     * @param IchieBenjamin\CodeGenerator\Models\Index $index
      *
      * @return $this
      */
@@ -1071,7 +1071,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the field's "nullable" value to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -1088,7 +1088,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the field's "comment" value to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */
@@ -1123,7 +1123,7 @@ class CreateMigrationCommand extends MigrationCommandBase
      * Adds the table's "primary column" to the given property.
      *
      * @param string $property
-     * @param CrestApps\CodeGenerator\Models\Field $field
+     * @param IchieBenjamin\CodeGenerator\Models\Field $field
      *
      * @return $this
      */

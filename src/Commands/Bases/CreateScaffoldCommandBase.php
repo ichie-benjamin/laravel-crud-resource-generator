@@ -1,12 +1,12 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Bases;
+namespace IchieBenjamin\CodeGenerator\Commands\Bases;
 
-use CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase;
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\ScaffoldTrait;
+use IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\ScaffoldTrait;
 use Exception;
 use Illuminate\Console\Command;
 
@@ -17,7 +17,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Runs any logic before scaffolding
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $input
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $input
      *
      * @return void
      */
@@ -51,7 +51,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Executes the command that generates a migration.
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $input
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $input
      *
      * @return $this
      */
@@ -81,7 +81,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Executes the command that generate fields' file.
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $input
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $input
      *
      * @return $this
      */
@@ -105,7 +105,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Executes the command that generate fields' file.
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $input
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $input
      *
      * @return $this
      */
@@ -128,7 +128,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Executes the command that generates a language files.
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $input
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $input
      *
      * @return $this
      */
@@ -153,7 +153,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Executes the command that generates a model.
      *
-     * @param CrestApps\CodeGenerator\Models\Bases\ScaffoldInputBase $input
+     * @param IchieBenjamin\CodeGenerator\Models\Bases\ScaffoldInputBase $input
      *
      * @return $this
      */
@@ -183,7 +183,7 @@ class CreateScaffoldCommandBase extends Command
     /**
      * Gets a clean user inputs.
      *
-     * @return CrestApps\CodeGenerator\Models\ScaffoldInputBase
+     * @return IchieBenjamin\CodeGenerator\Models\ScaffoldInputBase
      */
     protected function getCommandInput()
     {

@@ -1,18 +1,18 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Framework;
+namespace IchieBenjamin\CodeGenerator\Commands\Framework;
 
-use CrestApps\CodeGenerator\Models\Field;
-use CrestApps\CodeGenerator\Models\ForeignRelationship;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\FieldTransformer;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Traits\CommonCommand;
-use CrestApps\CodeGenerator\Traits\GeneratorReplacers;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Models\Field;
+use IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\FieldTransformer;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Traits\CommonCommand;
+use IchieBenjamin\CodeGenerator\Traits\GeneratorReplacers;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
 use Illuminate\Console\Command;
 
 class CreateModelCommand extends Command
@@ -106,7 +106,7 @@ class CreateModelCommand extends Command
     /**
      * Checks for basic errors
      *
-     * @param  CrestApps\CodeGenerator\Models\Resource $resource
+     * @param  IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $destenationFile
      *
      * @return bool
@@ -551,7 +551,7 @@ class CreateModelCommand extends Command
     /**
      * Gets accessor for a given field.
      *
-     * @param  CrestApps\CodeGenerator\Models\Field  $field
+     * @param  IchieBenjamin\CodeGenerator\Models\Field  $field
      * @param  string $content
      * @return string
      */
@@ -568,7 +568,7 @@ class CreateModelCommand extends Command
     /**
      * Gets mutator for a given field.
      *
-     * @param  CrestApps\CodeGenerator\Models\Field  $field
+     * @param  IchieBenjamin\CodeGenerator\Models\Field  $field
      * @param  string $content
      *
      * @return string
@@ -586,7 +586,7 @@ class CreateModelCommand extends Command
     /**
      * Creates the code for a relationship.
      *
-     * @param CrestApps\CodeGenerator\Models\ForeignRelation $relation
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignRelation $relation
      *
      * @return string
      */
@@ -605,7 +605,7 @@ class CreateModelCommand extends Command
     /**
      * Gets the return type for the given relationship
      *
-     * @param CrestApps\CodeGenerator\Models\ForeignRelation $relation
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignRelation $relation
      *
      * @return string
      */

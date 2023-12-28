@@ -1,17 +1,17 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Bases;
+namespace IchieBenjamin\CodeGenerator\Commands\Bases;
 
-use CrestApps\CodeGenerator\Commands\Bases\ControllerRequestCommandBase;
-use CrestApps\CodeGenerator\Models\ForeignRelationship;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\Arr;
-use CrestApps\CodeGenerator\Support\Config;
-use CrestApps\CodeGenerator\Support\Helpers;
-use CrestApps\CodeGenerator\Support\Str;
-use CrestApps\CodeGenerator\Support\ViewLabelsGenerator;
-use CrestApps\CodeGenerator\Traits\LanguageTrait;
-use CrestApps\CodeGenerator\Traits\ModelTrait;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ControllerRequestCommandBase;
+use IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\Arr;
+use IchieBenjamin\CodeGenerator\Support\Config;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Support\Str;
+use IchieBenjamin\CodeGenerator\Support\ViewLabelsGenerator;
+use IchieBenjamin\CodeGenerator\Traits\LanguageTrait;
+use IchieBenjamin\CodeGenerator\Traits\ModelTrait;
 
 abstract class ControllerCommandBase extends ControllerRequestCommandBase
 {
@@ -48,7 +48,7 @@ abstract class ControllerCommandBase extends ControllerRequestCommandBase
     /**
      * Build the model class with the given name.
      *
-     * @param  CrestApps\CodeGenerator\Models\Resource $resource
+     * @param  IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $destenationFile
      *
      * @return bool
@@ -440,7 +440,7 @@ abstract class ControllerCommandBase extends ControllerRequestCommandBase
     /**
      * Gets the relation accessor for the given foreign renationship.
      *
-     * @param CrestApps\CodeGenerator\Models\ForeignRelationship $collection
+     * @param IchieBenjamin\CodeGenerator\Models\ForeignRelationship $collection
      *
      * @return string
      */
@@ -651,7 +651,7 @@ abstract class ControllerCommandBase extends ControllerRequestCommandBase
     /**
      * Calls the create:form-request command
      *
-     * @param  CrestApps\CodeGenerator\Models\ViewInput $input
+     * @param  IchieBenjamin\CodeGenerator\Models\ViewInput $input
      *
      * @return $this
      */
@@ -906,7 +906,7 @@ abstract class ControllerCommandBase extends ControllerRequestCommandBase
      * Processes common tasks
      *
      * @param object $input
-     * @param CrestApps\CodeGenerator\Models\Resource $resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource $resource
      * @param string $stub
      *
      * @return $this

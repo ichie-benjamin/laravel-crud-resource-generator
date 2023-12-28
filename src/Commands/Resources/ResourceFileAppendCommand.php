@@ -1,13 +1,13 @@
 <?php
 
-namespace CrestApps\CodeGenerator\Commands\Resources;
+namespace IchieBenjamin\CodeGenerator\Commands\Resources;
 
-use CrestApps\CodeGenerator\Commands\Bases\ResourceFileCreatorCommandBase;
-use CrestApps\CodeGenerator\Models\ForeignRelationship;
-use CrestApps\CodeGenerator\Models\Index;
-use CrestApps\CodeGenerator\Models\Resource;
-use CrestApps\CodeGenerator\Support\FieldTransformer;
-use CrestApps\CodeGenerator\Support\Helpers;
+use IchieBenjamin\CodeGenerator\Commands\Bases\ResourceFileCreatorCommandBase;
+use IchieBenjamin\CodeGenerator\Models\ForeignRelationship;
+use IchieBenjamin\CodeGenerator\Models\Index;
+use IchieBenjamin\CodeGenerator\Models\Resource;
+use IchieBenjamin\CodeGenerator\Support\FieldTransformer;
+use IchieBenjamin\CodeGenerator\Support\Helpers;
 
 class ResourceFileAppendCommand extends ResourceFileCreatorCommandBase
 {
@@ -82,7 +82,7 @@ class ResourceFileAppendCommand extends ResourceFileCreatorCommandBase
     /**
      * Merges the given file's content to the new fields.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource &$resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource &$resource
      * @param (object) $input
      *
      * @return int
@@ -109,7 +109,7 @@ class ResourceFileAppendCommand extends ResourceFileCreatorCommandBase
     /**
      * Merges the relation to the existing resources.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource &$resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource &$resource
      * @param (object) $input
      *
      * @return int
@@ -145,7 +145,7 @@ class ResourceFileAppendCommand extends ResourceFileCreatorCommandBase
     /**
      * Merges the indexes to the existing resources.
      *
-     * @param CrestApps\CodeGenerator\Models\Resource &$resource
+     * @param IchieBenjamin\CodeGenerator\Models\Resource &$resource
      * @param (object) $input
      *
      * @return int
