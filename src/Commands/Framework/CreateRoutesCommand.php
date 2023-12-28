@@ -235,7 +235,7 @@ class CreateRoutesCommand extends Command
             }
 
             $replaceWith .= $using;
-            
+
             $newContent = str_replace($matches[0], $replaceWith, $content);
 
             $this->putContentInFile($routesFile, $newContent);
@@ -402,7 +402,9 @@ class CreateRoutesCommand extends Command
     {
         if (Helpers::isNewerThanOrEqualTo('5.3')) {
 
-            $file = ($type == 'api') ? 'api' : 'web';
+            $route = Config::getWebRoute();
+
+            $file = ($type == 'api') ? 'api' : $route;
 
             return base_path('routes/' . $file . '.php');
         }

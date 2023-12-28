@@ -87,6 +87,11 @@ class Config
         return self::getStringBaseValue('form_request_name_postfix');
     }
 
+    public static function getWebRoute()
+    {
+        return self::getStringBaseValue('web_route');
+    }
+
     /**
      * Gets the non-English singular to plural definitions.
      *
