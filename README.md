@@ -5,14 +5,13 @@
 
 An intelligent code generator for Laravel framework that will save you time! This awesome tool will help you generate resources like views, controllers, routes, migrations, languages and/or form-requests! It is extremely flexible and customizable to cover many on the use cases. It is shipped with cross-browsers compatible template, along with a client-side validation to modernize your application.
 
-For full documentation and live demo please visit <a href="https://crestapps.com/laravel-code-generator/docs/2.3" target="_blank" title="Laravel Code Generator Documentation">IchieBenjamin.com</a>
+For full documentation and live demo please visit <a href="https://crestapps.com/laravel-code-generator/docs/2.3" target="_blank" title="Laravel Code Generator Documentation">crestapps.com</a>
 
-**Note: ** The available documentation is for versions <= 2.2. The documentation for vertion 2.3+ is very similar with some exceptions. Please review the <a href="https://github.com/IchieBenjamin/laravel-code-generator/blob/master/CHANGELOG.md" title="ChangeLog">Change Log</a> to get a list of the changes.
-
+**Note: ** The this is fork of CrestApps/laravel-code-generator, all credit should go the creator
 ## Features
 
 <ul>
-	<li>One step installation when using Laravel 5.5+</li>
+	<li>One step installation when using Laravel 10+</li>
 	<li>Create very clean, reusable and highly readable code to build on.</li>
 	<li>Create full resources using a single command with <strong>migration</strong> or from <strong>existing database</strong>.</li>
 	<li>Creates full resources for all of the existing tables in the database using one command.</li>
@@ -48,18 +47,9 @@ For full documentation and live demo please visit <a href="https://crestapps.com
 1. To download this package into your laravel project, use the command-line to execute the following command
 
 	```
-	composer require crestapps/laravel-code-generator --dev
+	composer require ichie-benjamin/laravel-code-generator
 	```
- 
-2. **(You may skip this step when using Laravel >= 5.5)** To bootstrap the packages into your project while using command-line only, open the app/Providers/AppServiceProvider.php file in your project. Then, add the following code to the register() method.
 
-	Add the following line to bootstrap laravel-code-generator to the framework.
-
-	```
-	if ($this->app->runningInConsole()) {
-	    $this->app->register('IchieBenjamin\CodeGenerator\CodeGeneratorServiceProvider');
-	}
-	```
 
 > A layout is required for the default views! The code generator allows you to create a layout using the command-line. Of cource you can use your own layout. You'll only need to include [CSS bootstrap framework](http://getbootstrap.com/ "CSS bootstrap framework") in your layout for the default templates to work properly. Additionally, you can chose to you design your own templetes using a different or no css framework. 
 
@@ -131,33 +121,10 @@ Checkout our channel on <a href="https://www.youtube.com/channel/UCkEd0nOoRf3o0a
 </li>
 </ul>
 
-> Full documentation available at [IchieBenjamin.com](https://www.crestapps.com/laravel-code-generator/docs/2.3 "Laravel Code Generator Documentation"). 
+> Full documentation available at [crestapps.com](https://www.crestapps.com/laravel-code-generator/docs/2.3 "Laravel Code Generator Documentation"). 
 
-> Live demo is available at [IchieBenjamin.com](https://www.crestapps.com/laravel-code-generator/demos/v2-3 "Laravel Code Generator Live Demo"). 
+> Live demo is available at [crestapps.com](https://www.crestapps.com/laravel-code-generator/demos/v2-3 "Laravel Code Generator Live Demo"). 
 
-## Upgrading from version  <= 2.2 to 2.3+
- - Delete the `codegenerator.php` file found in your `config` folder, then rename the `codegenerator_custom.php` file to `laravel-code-generator.php` if one exists. Alternatively, you can delete both `codegenerator.php` and `codegenerator_custom.php`
-
-
-## Contribution
-Do you like this project and want to contribute?
-- **HELP WANTED** Version `v2.3` needs to be documented. If you are able to contribute, please read the <a href="https://github.com/IchieBenjamin/laravel-code-generator/blob/v2.3/CHANGELOG.md">change-log</a> in <a href="https://github.com/IchieBenjamin/laravel-code-generator/tree/v2.3">v2.3 branch</a> and document it in the <a href="https://github.com/IchieBenjamin/crestapps-site">IchieBenjamin-site</a> repository. For any help, my email can be found in the `composer.json` file, feel free to send me an email.
-- **HELP WANTED** Need to create a new theme for Bootstrap 5 and make it the default. If interested, please submit a PR.
-- Please start by ***Staring*** this package on GitHub.
-- Sharing this projects with others is your way of saying keep improvements and new awesome feature coming.
-- Report any bugs or send us any comments, idea, thought that you may have about this project as an issue on GitHub.
-
-## What did you create with this package?
-I'd love to know if your site was generated using this package and list your logo on the documentation site. Please email using my contact info found in `composer.json` file.
-
-## Examples
-
-The following example assumes that we are trying to create a CRUD called <var>AssetCategory</var> with the fields listed below.
-
-- id
-- name
-- description
-- is_active
 
 
 #### Basic example - CRUD with migration
@@ -242,10 +209,6 @@ The following example assumes that we are trying to create a CRUD called <var>As
 <p><small>Then it will create a model <var>app/Models/AssetCategory</var>, a controller <var>app/Http/Controllers/AssetCategoriesController, all views and the routes!</var></small></p>
 </blockquote>
 
-
-## What's new?
-* <a href="https://crestapps.com/laravel-code-generator/docs/2.3#release-notes">Release Notes</a>
-* <a href="https://crestapps.com/laravel-code-generator/docs/2.3#upgrade-guide">Upgrade Guide</a>
 
 ## License
 
