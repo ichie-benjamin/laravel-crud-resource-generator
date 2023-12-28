@@ -27,10 +27,11 @@ class CodeGeneratorServiceProvider extends ServiceProvider
             $dir . 'templates/default' => $this->codeGeneratorBase('templates/default'),
         ], 'default-template');
 
-        // publish the defaultcollective-template
+        // publish the splade-template
         $this->publishes([
-            $dir . 'templates/default-collective' => $this->codeGeneratorBase('templates/default-collective'),
-        ], 'default-collective-template');
+            $dir . 'templates/splade' => $this->codeGeneratorBase('templates/splade'),
+        ], 'splade-template');
+
     }
 
     /**
