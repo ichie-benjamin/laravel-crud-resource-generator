@@ -663,7 +663,8 @@ abstract class HtmlGeneratorBase
 
         $this->replaceFieldName($stub, $field->name)
             ->replaceCssClass($stub, $field->cssClass)
-            ->replaceFieldLabel($stub, $this->getLabelFromField($field))
+            ->replaceFieldLabel($stub, ucfirst($field->name))
+//            ->replaceFieldLabel($stub, $this->getLabelFromField($field))
             ->replaceFieldType($stub, $field->htmlType)
             ->replaceFieldValue($stub, $this->getFieldValue($field->htmlValue, $field->name))
             ->replaceFieldMinValue($stub, $this->getFieldMinValueWithName($minValue))
