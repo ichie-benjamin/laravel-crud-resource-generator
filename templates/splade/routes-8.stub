@@ -1,3 +1,5 @@
+
+
     Route::get('/', [[% controller_name %]::class, 'index'])
          ->name('[% index_route_name %]');
     Route::get('/create', [[% controller_name %]::class, 'create'])

@@ -1,3 +1,10 @@
+
+
+
+    Route::resource('[% prefix %].[% model_name_singular_variable %]', [% controller_name %]::class);
+
+
+
     Route::get('/', '[% controller_name %]@index')
          ->name('[% index_route_name %]');
     Route::get('/create','[% controller_name %]@create')
