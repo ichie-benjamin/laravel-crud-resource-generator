@@ -567,6 +567,7 @@ abstract class HtmlGeneratorBase
         $stub = $this->getStubContent('form-file-field.blade', $this->template);
 
         $this->replaceFieldName($stub, $field->name)
+            ->replaceFieldLabel($stub, ucfirst($field->name))
             ->replaceCssClass($stub, $field->cssClass)
             ->replaceRowFieldValue($stub, $this->getFieldAccessorValue($field, 'show'))
             ->wrapField($stub, $field)
