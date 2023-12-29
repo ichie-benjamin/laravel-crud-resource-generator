@@ -421,6 +421,7 @@ abstract class HtmlGeneratorBase
         $checkedItem = $this->getCheckedItemForPickItem($option->value, $field->name, $field->isMultipleAnswers(), $field->htmlValue);
         $this->replaceFieldType($stub, $field->htmlType)
             ->replaceFieldName($stub, $fieldName)
+            ->replaceFieldLabel($stub, ucfirst($fieldName))
             ->replaceOptionValue($stub, $option->value)
             ->replaceCheckedItem($stub, $checkedItem)
             ->replaceItemId($stub, $option->id)
