@@ -382,6 +382,10 @@ class CreateRoutesCommand extends Command
     {
         $existingRoutes = Route::getRoutes();
 
+        if(Config::getAdminRouteNamePrefix()){
+            $name = 'admin.'.$name;
+        }
+
         foreach ($existingRoutes as $existingRoute) {
             if ($existingRoute->getName() == $name) {
                 return true;

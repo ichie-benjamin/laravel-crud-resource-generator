@@ -91,6 +91,10 @@ class Config
     {
         return self::getStringBaseValue('web_route');
     }
+    public static function getAdminRouteNamePrefix()
+    {
+        return self::getBoolBaseValue('use_admin_route_name_prefix');
+    }
 
     /**
      * Gets the non-English singular to plural definitions.

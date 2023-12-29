@@ -22,6 +22,8 @@ return [
 
     'web_route' => 'admin',
 
+    'use_admin_route_name_prefix' => true,
+
     /*
     |--------------------------------------------------------------------------
     | The default path where the templates are located.
@@ -111,6 +113,7 @@ return [
     |
      */
     'use_smart_migrations' => true,
+
 
     /*
     |--------------------------------------------------------------------------
