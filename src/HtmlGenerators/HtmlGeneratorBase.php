@@ -609,6 +609,7 @@ abstract class HtmlGeneratorBase
         $stub = $this->getStubContent('form-month-field.blade', $this->template);
 
         $this->replaceFieldName($stub, $field->name)
+            ->replaceFieldLabel($stub, ucfirst($field->name))
             ->replaceCssClass($stub, $field->cssClass)
             ->replaceSelectedValue($stub, $this->getSelectedValue($field->name, '$value', $field->htmlValue))
             ->replaceFieldPlaceHolder($stub, $this->getFieldPlaceHolderForMenu($field->getPlaceholder(), $field->name))
